@@ -10,7 +10,9 @@ server.connection({
 
 server.register(plugins.concat(controllers), function(err){
   if(err)
+  {
     throw err;
-
+  }
+  
   server.start();
 });
